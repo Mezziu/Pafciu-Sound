@@ -1,0 +1,273 @@
+/* /|\|/|\|/|\|/|\|/|\| Pafciu.css /|\|/|\|/|\|/|\|/|\| */
+
+:root {
+  --main: #1E1A26;
+  --dark: #100e14;
+  --gray: #17151d;
+  --text: #C3D8D1;
+  --font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: url("src/img.jpg");
+}
+
+/* /|\|/|\|/|\|/|\|/|\| Header /|\|/|\|/|\|/|\|/|\| */
+
+header {
+  background: var(--main);
+  width: 80vw;
+  border-radius: 3vh;
+  margin: 2vh;
+}
+
+header h1 {
+  color: var(--text);
+  font-family: var(--font);
+  padding: 1vh;
+  text-align: center;
+  font-size: 5vh;
+}
+
+header h2 {
+  color: var(--text);
+  font-family: var(--font);
+  text-align: center;
+  font-size: 4vh;
+}
+
+header h3 {
+  color: var(--text);
+  font-family: var(--font);
+  text-align: center;
+  font-size: 3vh;
+}
+
+/* /|\|/|\|/|\|/|\|/|\| Main /|\|/|\|/|\|/|\|/|\| */
+
+main {
+  display: flex;
+  justify-content: center;
+  max-width: 80vw;
+  height: 70vh;
+}
+
+/* /|\|/|\|/|\|/|\|/|\| Nav /|\|/|\|/|\|/|\|/|\| */
+
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--main);
+  padding: 2vh;
+  width: 15vw;
+  margin: 1vh;
+  border-radius: 3vh;
+}
+
+nav a {
+  color: var(--text);
+  font-family: var(--font);
+  padding: 2vh;
+  text-decoration: none;
+  margin: 1vh;
+  background-color: var(--gray);
+  text-align: center;
+  font-size: 2vw;
+  border-radius: 2vh;
+  transition:all 0.3s;
+}
+
+nav p {
+  position: absolute;
+  color: var(--text);
+  font-family: var(--font);
+  opacity: 20%;
+  display: flex;
+  bottom:0;
+}
+
+nav a:hover {
+  background-color: var(--dark);
+  padding: 4vh 0 4vh 0;
+}
+
+/* /|\|/|\|/|\|/|\|/|\| Content /|\|/|\|/|\|/|\|/|\| */
+
+content {
+  display: flex;
+  align-items: center;
+  overflow: hidden scroll;
+  background: var(--main);
+  width: 80vw;
+  margin:1vh;
+  border-radius: 3vh; 
+}
+
+/* /|\|/|\|/|\|/|\|/|\| Changelog /|\|/|\|/|\|/|\|/|\| */
+
+.changelog {
+  flex-direction: column;
+}
+
+.changelog h1 {
+  color: var(--text);
+  font-family: var(--font);
+  text-align: center;
+  font-size: 5vh;
+}
+
+.changelog h3 {
+  color: var(--text);
+  font-family: var(--font);
+  text-align: center;
+  font-size: 3vh;
+  color: gold;
+}
+
+.changelog p {
+  color: var(--text);
+  font-family: var(--font);
+  text-align: center;
+  font-size: 2vh;
+}
+
+.changelog div {
+  margin:1vw;
+  padding: 1vw;
+  width: 80%;
+  border-radius: 3vw;
+  background-color: var(--gray);
+  transition: all 0.3s;
+}
+
+.changelog div:hover {
+  transform: scale(1.1);
+  background-color: var(--dark);
+  margin: 2vw;
+}
+
+/* /|\|/|\|/|\|/|\|/|\| Sounds /|\|/|\|/|\|/|\|/|\| */
+
+.sounds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10vw, 15vw));
+}
+
+.sounds div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:2vh;
+  padding: 1vw;
+  width: 10vw;
+  border-radius: 1vw;
+  background-color: var(--gray);
+  transition: all 0.3s;
+}
+
+.sounds div:hover {
+  transform: scale(1.1);
+}
+
+.sounds audio {
+  display: none;
+}
+
+.sounds div div {
+  text-align: center;
+  background-color: var(--dark);
+  width: 10vh;
+  height: 10vh;
+}
+
+.sounds button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  width:100%;
+  height: 100%;
+  font-size: 3vw;
+  color: var(--dark);
+}
+
+.sounds p {
+  color: var(--text);
+  font-family: var(--font);
+  font-weight: bold;
+  text-align: center;
+  font-size: 2vh;
+}
+
+.sounds img {
+  width: 50%;
+}
+
+.sounds a {
+  color: var(--text);
+  margin-bottom: 1vh;
+  font-family: var(--font);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5vh;
+}
+
+/* /|\|/|\|/|\|/|\|/|\| Elements /|\|/|\|/|\|/|\|/|\| */
+
+hr {
+  width: 100%;
+  border-color: var(--dark);
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+  border-radius: 3vh;
+  background-color: var(--dark);
+  height: 10vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text);
+  border-radius: 3vh;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    justify-content:left;
+  }
+  main {
+    flex-direction: column;
+    height:auto;
+  }
+  nav {
+    width: 70vw;
+  }
+  nav a {
+    font-size: 5vh;
+  }
+  content {
+    overflow:hidden;
+  }
+  .sounds {
+    display: flex;
+    flex-direction: column;
+  }
+  .sounds div {
+    width: 80%;
+  }
+}
+.home {
+  color: var(--text);
+  font-family: var(--font);
+  text-align: center;
+  font-size: 5vh;
+}
+/* /|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\| */
