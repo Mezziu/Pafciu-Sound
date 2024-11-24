@@ -2,6 +2,8 @@ let sounds = [
     "NIEEE KURWA JEP JEP JEP",
     "Co ja tu muszę zrobić!",
     "Bełkot z okazji 100k",
+    "Kurwaaaa",
+    "No co jest do CHUJAAAAA",
   
 ];
 
